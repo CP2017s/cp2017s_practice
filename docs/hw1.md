@@ -10,7 +10,8 @@
 
 - Always show prompt `CP-2017-12345>`(your student ID) before each task.
 - In the initial state, when the user inputs empty line(just `\n`), it shows information about choices.
-- If user inputs `exit`, end the program.
+- In the initial state, when the user inputs `exit`, end the program.
+- When each menu is finished, it returns to the initial state to wait another input of the user.
 
 ### 1-2. sample input
 
@@ -64,8 +65,8 @@
 - In the initial state, when the user inputs `2`, it enters the `Remove person` menu and asks index of person to remove.
 
 
-
-- The index of removed person is ignored. That is, if user remove a person whose index is `0` and adds another person, the index of new person becomes `1`.
+- example of index policy
+	- In the phone book with only one person, if user remove a person whose index is `0` and adds another person, the index of new person becomes `0`.
 
 ### 3-2. sample input
 
@@ -126,5 +127,3 @@
 	2. Stephen Curry_02-1234-5678_940101_261
 	.
 	.
-	.
-       
