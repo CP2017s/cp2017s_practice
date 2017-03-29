@@ -1,46 +1,52 @@
 # HW1
 
-**You do not have to think about any Exception Cases.**
+**You do not need to consider exceptions that are not mentioned in this document.**
+
+**You have to print exactly same as sample outputs.**
 
 ## 1. Phone Book
 
-### 1-1. 설명
+### 1-1. constraints
 
-- Always show prompt `CP-2017-12345>`(your student ID) at first and at the end of each task.
-- If user inputs enter, show information about choices.
+- Always show prompt `CP-2017-12345>`(your student ID) before each task.
+- In the initial state, when the user inputs empty line(just `\n`), it shows information about choices.
 - If user inputs `exit`, end the program.
 
-### 1-2. 예제 입력
+### 1-2. sample input
 
 	
 	
-### 1-3. 예제 출력
+### 1-3. sample output
 
 	Phone Book
 	1. Add person
 	2. Remove person
 	3. Print phone book
 	
----	
+---
+
 ## 2. Add person
 
-### 2-1. 설명
+### 2-1. constraints
 
-- User can add person from Add person menu.
+- User can add person from the `Add person` menu.
+- In the initial state, when the user inputs `1`, it enters the `Add person` menu and shows information about choices.
+
+
 - Each person stores his/her first, last name and phone number.
 - There must be a space between the first and last names.
-- User inputs only `02-xxxx-xxxx` or `010-xxxx-xxxx` as phone number.
-- Person who is categorized in Work stores his/her team.
-- Person who is categorized in Family stores his/her birthday.
-- User inputs only `YYMMDD` as birthday.
-- Person who is categorized in Friend stores his/her age.
+- User inputs only `02-xxxx-xxxx` or `010-xxxx-xxxx` format as phone number.
+- Person who is categorized in `Work` stores his/her team.
+- Person who is categorized in `Family` stores his/her birthday.
+- User inputs only `YYMMDD` format as birthday.
+- Person who is categorized in `Friend` stores his/her age.
 - After the task is done, print `Successfully added new person`.
 
-### 2-2. 예제 입력
+### 2-2. sample input
 
 	1
 	
-### 2-3. 예제 출력
+### 2-3. sample output
 
 	Select Type
 	1. Person
@@ -49,25 +55,31 @@
 	4. Friend
 	
 ---
+
 ## 3. Remove person
 
-### 3-1. 설명
+### 3-1. constraints
 
-- User removes information of person from Remove person menu.
+- User removes information of person from the `Remove person` menu.
+- In the initial state, when the user inputs `2`, it enters the `Remove person` menu and asks index of person to remove.
 
-### 3-2. 예제 입력
+
+
+- The index of removed person is ignored. That is, if user remove a person whose index is `0` and adds another person, the index of new person becomes `1`.
+
+### 3-2. sample input
 
 	2
 	
-### 3-3. 예제 출력
+### 3-3. sample output
 
 	Enter Index of person: 
        
-### 3-4. 예제 입력
+### 3-4. sample input
 
 	10
 	
-### 3-5. 예제 출력
+### 3-5. sample output
 
 - If the index is available
 	
@@ -78,19 +90,41 @@
 		Person does not exist!
                
 ---
-## 4. Remove person
 
-### 4-1. 설명
+## 4. Print person
 
-- User can print all the stored people and their information from Remove person menu.
+### 4-1. constraints
 
-### 4-2. 예제 입력
+- User can print all the stored people and their information.
+- In the initial state, when the user inputs `3`, it prints information of all persons.
+
+
+- People who have been removed should not print.
+- Output format is
+	- `Person` class
+	
+		`{first name} {last name}_{phone number}`
+		
+	- `Work`, `Friend`
+
+		`{first name} {last name}_{phone number}_{an addtional attribute}`
+		
+	- `Family`
+
+		`{first name} {last name}_{phone number}_{birthday}_{D-day}`
+			
+		
+
+### 4-2. sample input
 
 	3
 	
-### 4-3. 예제 출력
+### 4-3. sample output
 
 	Phone Book Print
 	1. John doe_010-1234-5678_Warriors
 	2. Stephen Curry_02-1234-5678_940101_261
+	.
+	.
+	.
        
