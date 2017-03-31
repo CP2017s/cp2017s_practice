@@ -7,7 +7,7 @@
 - Create class 'Member' with the construction of
 
 
-```c++
+```cpp
 class Member{
 	private:
 		string name;
@@ -15,7 +15,8 @@ class Member{
 		string department;
 	public:
 		Member(string name, int age, string department);
-		~Member();
+		//~Member();
+		//Destructor is called implicitly when the object is out of the scope it is called, so when finishing one loop, C++ compiler implicitly calls Destructor.
 		string getName();
 		int getAge();
 		string getDept();
@@ -58,9 +59,6 @@ class Member{
         Harry : Hogwarts, 37 years old.
         Viktor : Durmstrang, 41 years old.
         Fleur : Beauxbatons, 40 years old.
-        Harry is no longer in Hogwarts.
-        Viktor is no longer in Durmstrang.
-        Fleur is no longer in Beauxbatons.
 
 
 ---
@@ -74,10 +72,11 @@ class Member{
 
 ```cpp
 class Person{
-	private:
-		string name;
+	private://can use protected:
+	  string name;
 		int age;
 		string gender;//Male or Female
+		//When inheritting class, if a member variable is private, you must access to variable with getter, setter in child class, otherwise, you can use protected scope.
 	public:
 		Person(...);
 		~Person();
@@ -86,7 +85,7 @@ class Person{
 		string getGender();
 		void introduce();
 };
-
+```
 
 - Function void introduce() prints out the information of Person class
 
@@ -110,11 +109,12 @@ class Person{
 
 - From second line, for N lines, enter name, age, gender.
 
-- Then, enter the number(M) of Students you would change person into student.
+- Then, enter the number(M) of Students you would create from students.
 
-- For M lines, enter the name of person and the name of school.
+- For M lines, enter the name, and school
 
-- After all input is done, print out introduce() of all person.
+- After all input is done, print out introduce() of all persons and students, following the order of person.
+
 
 ### 2-3. Input Example
 
@@ -123,14 +123,14 @@ class Person{
         Byunghoon 24 Male
         Jiwoo 24 Female
         2
-        Byunghoon dcslab
         Jiwoo dcslab
+        HyunIl dcslab
 
 ### 2-4. Output Example
 
         HyunIl is 24 years old, and is Male
+        Hyunil is studying in dcslab
         Byunghoon is 24 years old, and is Male
-        Byunghoon is studying in dcslab
         Jiwoo is 24 years old, and is Female
         Jiwoo is studying in dcslab
 
