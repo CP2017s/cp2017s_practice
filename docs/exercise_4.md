@@ -7,7 +7,7 @@
 - Create class 'Member' with the construction of
 
 
-```c++
+```cpp
 class Member{
 	private:
 		string name;
@@ -70,12 +70,13 @@ class Member{
 
 - Create class Student that inherits Person class as below.
 
-'''c++
+```cpp
 class Person{
-	private:
-		string name;
+	private://can use protected:
+	  string name;
 		int age;
 		string gender;//Male or Female
+		//When inheritting class, if a member variable is private, you must access to variable with getter, setter in child class, otherwise, you can use protected scope.
 	public:
 		Person(...);
 		~Person();
@@ -84,7 +85,7 @@ class Person{
 		string getGender();
 		void introduce();
 };
-'''
+```
 
 - Function void introduce() prints out the information of Person class
 

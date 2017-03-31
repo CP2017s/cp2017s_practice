@@ -72,7 +72,7 @@ class Person{
 		string name;
 		int age;
 		string gender;//Male or Female
-		//상속될때에는 private변수로 구현되어 있을 경우 getter함수를 통해서만 가져와야 합니다(어떠한 범위로 상속받더라도 private은 보이지않음)
+		//상속될때에는 멤버 변수가 private변수로 구현되어 있을 경우 getter함수를 통해서만 가져와야 합니다(어떠한 범위로 상속받더라도 private은 보이지않음)
 		//편의를 위하여 protected로 바꾸어서 구현해 보시기 바랍니다(자유)
 	public:
 		Person(...);
