@@ -39345,7 +39345,8 @@
 		string department;
 	<span class="pl-k">public:</span>
 		<span class="pl-en">Member</span>(string name, <span class="pl-k">int</span> age, string department);
-		<span class="pl-en">~Member</span>();
+		<span class="pl-c"><span class="pl-c">//</span>~Member();</span>
+		<span class="pl-c"><span class="pl-c">//</span>Destructor is called implicitly when the object is out of the scope it is called, so when finishing one loop, C++ compiler implicitly calls Destructor.</span>
 		string <span class="pl-en">getName</span>();
 		<span class="pl-k">int</span> <span class="pl-en">getAge</span>();
 		string <span class="pl-en">getDept</span>();
@@ -39391,9 +39392,6 @@
   Harry : Hogwarts, 37 years old.
   Viktor : Durmstrang, 41 years old.
   Fleur : Beauxbatons, 40 years old.
-  Harry is no longer in Hogwarts.
-  Viktor is no longer in Durmstrang.
-  Fleur is no longer in Beauxbatons.
 </code></pre>
 				</li>
 			</ul>
@@ -39405,10 +39403,11 @@
 			</ul>
 			<div class="highlight highlight-source-c++"><pre><span class="pl-k">class</span> <span
 					class="pl-en">Person</span>{
-	<span class="pl-k">private:</span>
-		string name;
+	<span class="pl-k">private:</span><span class="pl-c"><span class="pl-c">//</span>can use protected:</span>
+	  string name;
 		<span class="pl-k">int</span> age;
 		string gender;<span class="pl-c"><span class="pl-c">//</span>Male or Female</span>
+		<span class="pl-c"><span class="pl-c">//</span>When inheritting class, if a member variable is private, you must access to variable with getter, setter in child class, otherwise, you can use protected scope.</span>
 	<span class="pl-k">public:</span>
 		<span class="pl-en">Person</span>(...);
 		<span class="pl-en">~Person</span>();
@@ -39416,56 +39415,62 @@
 		<span class="pl-k">int</span> <span class="pl-en">getAge</span>();
 		string <span class="pl-en">getGender</span>();
 		<span class="pl-k">void</span> <span class="pl-en">introduce</span>();
-};
-
-
-- Function <span class="pl-k">void</span> <span class="pl-en">introduce</span>() prints out the information of Person class
-
-        NAME is AGE years old, and is GENDER
-
-- class Student have its own member variable that saves school name.
-
-- Function void introduce() of class Student prints out the information of Student class
-
-        NAME is AGE years old, and is GENDER
-        NAME is studying in SCHOOL
-
-
-- names of Member are not like each other
-
-
-
-### <span class="pl-c1">2</span>-<span class="pl-c1">2</span>. Input Description
-
-- At first line, input the <span class="pl-en">number</span>(N) of Person you would enter.
-
-- From second line, for N lines, enter name, age, gender.
-
-- Then, enter the number(M) of Students you would change person into student.
-
-- For M lines, enter the name of person and the name of school.
-
-- After all input is done, print out introduce() of all person.
-
-### <span class="pl-c1">2</span>-<span class="pl-c1">3</span>. Input Example
-
-        <span class="pl-c1">3</span>
-        HyunIl <span class="pl-c1">24</span> Male
-        Byunghoon <span class="pl-c1">24</span> Male
-        Jiwoo <span class="pl-c1">24</span> Female
-        <span class="pl-c1">2</span>
-        Byunghoon dcslab
-        Jiwoo dcslab
-
-### <span class="pl-c1">2</span>-<span class="pl-c1">4</span>. Output Example
-
-        HyunIl is <span class="pl-c1">24</span> years old, <span class="pl-k">and</span> is Male
-        Byunghoon is <span class="pl-c1">24</span> years old, <span class="pl-k">and</span> is Male
-        Byunghoon is studying in dcslab
-        Jiwoo is <span class="pl-c1">24</span> years old, <span class="pl-k">and</span> is Female
-        Jiwoo is studying in dcslab
-</pre>
+};</pre>
 			</div>
+			<ul>
+				<li>
+					<p>Function void introduce() prints out the information of Person class</p>
+					<pre><code>  NAME is AGE years old, and is GENDER
+</code></pre>
+				</li>
+				<li>
+					<p>class Student have its own member variable that saves school name.</p>
+				</li>
+				<li>
+					<p>Function void introduce() of class Student prints out the information of Student class</p>
+					<pre><code>  NAME is AGE years old, and is GENDER
+  NAME is studying in SCHOOL
+</code></pre>
+				</li>
+				<li>
+					<p>names of Member are not like each other</p>
+				</li>
+			</ul>
+			<h3>2-2. Input Description</h3>
+			<ul>
+				<li>
+					<p>At first line, input the number(N) of Person you would enter.</p>
+				</li>
+				<li>
+					<p>From second line, for N lines, enter name, age, gender.</p>
+				</li>
+				<li>
+					<p>Then, enter the number(M) of Students you would create from students.</p>
+				</li>
+				<li>
+					<p>For M lines, enter the name, and school</p>
+				</li>
+				<li>
+					<p>After all input is done, print out introduce() of all persons and students, following the order
+						of person.</p>
+				</li>
+			</ul>
+			<h3>2-3. Input Example</h3>
+			<pre><code>3
+HyunIl 24 Male
+Byunghoon 24 Male
+Jiwoo 24 Female
+2
+Jiwoo dcslab
+HyunIl dcslab
+</code></pre>
+			<h3>2-4. Output Example</h3>
+			<pre><code>HyunIl is 24 years old, and is Male
+Hyunil is studying in dcslab
+Byunghoon is 24 years old, and is Male
+Jiwoo is 24 years old, and is Female
+Jiwoo is studying in dcslab
+</code></pre>
 		</div>
 
 

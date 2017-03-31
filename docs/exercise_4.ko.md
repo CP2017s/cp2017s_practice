@@ -45,16 +45,17 @@ class Member{
 
 - 입력 앞에 > 표시를 해두었다 (실제 구현에서는 하지 않는다)
 
-        >Harry 37 Hogwarts
-        Harry is 37 years old.
-        >Viktor 41 Durmstrang
-        Viktor is 41 years old.
-        >Fleur 40 Beauxbatons
-        Fleur is 40 years old.
-        >QUIT 0 QUIT
-        Harry : Hogwarts, 37 years old.
-        Viktor : Durmstrang, 41 years old.
-        Fleur : Beauxbatons, 40 years old.
+
+		>Harry 37 Hogwarts
+		Harry is 37 years old.
+		>Viktor 41 Durmstrang
+		Viktor is 41 years old.
+		>Fleur 40 Beauxbatons
+		Fleur is 40 years old.
+		>QUIT 0 QUIT
+		Harry : Hogwarts, 37 years old.
+		Viktor : Durmstrang, 41 years old.
+		Fleur : Beauxbatons, 40 years old.
 
 
 ---
@@ -112,20 +113,18 @@ class Person{
 
 ### 2-3. 예제 입력
 
-        3
-        HyunIl 24 Male
-        Byunghoon 24 Male
-        Jiwoo 24 Female
-        2
-        Jiwoo dcslab
-        HyunIl dcslab
+	3
+	HyunIl 24 Male
+	Byunghoon 24 Male
+	Jiwoo 24 Female
+	2
+	Jiwoo dcslab
+	HyunIl dcslab
 
 ### 2-4. 예제 출력
 
-        HyunIl is 24 years old, and is Male
-        Hyunil is studying in dcslab
-        Byunghoon is 24 years old, and is Male
-        Jiwoo is 24 years old, and is Female
-        Jiwoo is studying in dcslab
-
-
+	HyunIl is 24 years old, and is Male
+	Hyunil is studying in dcslab
+	Byunghoon is 24 years old, and is Male
+	Jiwoo is 24 years old, and is Female
+	Jiwoo is studying in dcslab

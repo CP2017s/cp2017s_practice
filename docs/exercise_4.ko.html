@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Exercise 4 - Korean</title>
+	<title>Exercise 4-Korean</title>
 	<link rel="icon"
 		  href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAKCgr/FRUX/xYWGP8YGBr/GRkb/xsbHP8dHR7/Hh4f/x4eIP8fHyD/ICAh/yMjJP8kJCX/JiYo/ygoKv8pKSr/LCwu/y0tLv80NDT/QUFC/0ZGR/9MTE7/UFBR/1JSUv9bW1v/XFxc/2BgYP9hYWP/aGhp/2xsbP9ycnL/d3d3/3l5e/98fHz/f3+A/2dn/P9z3a//cNX8/4CAgP+Xl5f/nZ2e/56en/+fn5//n5+h/6amp/+rq6v/rKys/7CvsP+zs7T/uLi5/7u7u/+8vLz/wMDA/8fHx//Kysr/zc3N/9HR0f/d3d3/3t7e/+Xl5f/q6ur/6+vr/+3t7f/z8/P/9fX1//b29v/39/f/+Pj4//n5+f/6+vr/+/v7//z8/P/9/f3//v7+//////8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/NCYmJiYmJiYmJiYmJiYmNCZKSkpKSkpKSkpKSkpKSiYmSkpKRisdRkMbMklKSkomJkpKSSEiNUhEEQwpSUpKJiZKSi8LHhhAPAwBDDZKSiYmSkoWACA7SEc6HAEaSkomJkpKBxI/SkpKSj4ICkpKJiZKSgUTR0pKSkpGDwZKSiYmSkoTED1KSkpKOQQVSkomJkpKKgowMy4sNycIMUpKJiZKSkEZDgkDAgsNH0VKSiYmSkpKQigUBgkXLUhKSkomJkpKSkpKSkpKSkpKSkpKJiYmJiYmJiYmJiYmJiYmJiYmIyUkNDQ0NDQ0NDQ0NDQmOCYmJiYmJiYmJiYmJiYmOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/>
 	<link rel="stylesheet" href="/__/grip/static/octicons/octicons.css"/>
@@ -39345,7 +39345,8 @@
 		string department;
 	<span class="pl-k">public:</span>
 		<span class="pl-en">Member</span>(string name, <span class="pl-k">int</span> age, string department);
-		<span class="pl-en">~Member</span>();
+		<span class="pl-c"><span class="pl-c">//</span>~Member();</span>
+		<span class="pl-c"><span class="pl-c">//</span>소멸자는 해당 개체의 scope에서 벗어나는 순간 암묵적으로 호출이 되며, 루프 문 안에서 벗어나는 경우 C++에서는 암묵적으로 소멸자를 부르게 되어 있습니다.</span>
 		string <span class="pl-en">getName</span>();
 		<span class="pl-k">int</span> <span class="pl-en">getAge</span>();
 		string <span class="pl-en">getDept</span>();
@@ -39353,7 +39354,7 @@
 };</pre>
 			</div>
 			<ul>
-				<li>멤버들의 정보를 입력받고, 객체 생성,소멸시 문구가 뜨도록 만들어라</li>
+				<li>멤버들의 정보를 입력받고, 객체 생성시 문구가 뜨도록 만들어라</li>
 				<li>멤버들의 정보는 vector를 이용하여 관리하라</li>
 				<li>멤버들의 이름은 서로 같지 않다</li>
 			</ul>
@@ -39372,7 +39373,7 @@
 					<p>입력 종료 후에는 vector에서 차례대로 인스턴스의 내용을 print() 함수를 통해 인쇄한 뒤, vector 안에있는 인스턴스들을 소멸시켜라</p>
 				</li>
 				<li>
-					<p>인스턴스는 생성,소멸될 때 특정 문구를 인쇄한다.</p>
+					<p>인스턴스는 생성될 때 특정 문구를 인쇄한다.</p>
 				</li>
 			</ul>
 			<h3>1-3. 예제 입력 및 출력</h3>
@@ -39389,9 +39390,6 @@
   Harry : Hogwarts, 37 years old.
   Viktor : Durmstrang, 41 years old.
   Fleur : Beauxbatons, 40 years old.
-  Harry is no longer in Hogwarts.
-  Viktor is no longer in Durmstrang.
-  Fleur is no longer in Beauxbatons.
 </code></pre>
 				</li>
 			</ul>
@@ -39403,10 +39401,12 @@
 			</ul>
 			<div class="highlight highlight-source-c++"><pre><span class="pl-k">class</span> <span
 					class="pl-en">Person</span>{
-	<span class="pl-k">private:</span>
+	<span class="pl-k">protected:</span>
 		string name;
 		<span class="pl-k">int</span> age;
 		string gender;<span class="pl-c"><span class="pl-c">//</span>Male or Female</span>
+		<span class="pl-c"><span class="pl-c">//</span>상속될때에는 멤버 변수가 private변수로 구현되어 있을 경우 getter함수를 통해서만 가져와야 합니다(어떠한 범위로 상속받더라도 private은 보이지않음)</span>
+		<span class="pl-c"><span class="pl-c">//</span>편의를 위하여 protected로 바꾸어서 구현해 보시기 바랍니다(자유)</span>
 	<span class="pl-k">public:</span>
 		<span class="pl-en">Person</span>(...);
 		<span class="pl-en">~Person</span>();
@@ -39441,30 +39441,30 @@
 					<p>두번째 줄부터 N개의 줄 동안 사람의 이름,나이,성별을 입력한다.</p>
 				</li>
 				<li>
-					<p>이후 입력한 사람들 중 학교에 입학시킬 사람의 숫자(M)를 입력한다.</p>
+					<p>이후 학교에 입학시킬 사람의 숫자(M)를 입력한다.</p>
 				</li>
 				<li>
 					<p>이후 M개의 줄 동안 학교에 입학시킬 사람들의 이름과 학교이름을 입력한다.</p>
 				</li>
 				<li>
-					<p>입력 완료 시, 입력한 사람의 순서대로 introduce()함수를 실행시킨 후 종료한다.</p>
+					<p>입력 완료 시, 입력한 사람 또는 학생의 introduce()함수를 수행한다. 순서는 person에 대한 정보를 받은 순서로 출력한다.</p>
 				</li>
 			</ul>
 			<h3>2-3. 예제 입력</h3>
-			<pre><code>    3
-    HyunIl 24 Male
-    Byunghoon 24 Male
-    Jiwoo 24 Female
-    2
-    Byunghoon dcslab
-    Jiwoo dcslab
+			<pre><code>3
+HyunIl 24 Male
+Byunghoon 24 Male
+Jiwoo 24 Female
+2
+Jiwoo dcslab
+HyunIl dcslab
 </code></pre>
 			<h3>2-4. 예제 출력</h3>
-			<pre><code>    HyunIl is 24 years old, and is Male
-    Byunghoon is 24 years old, and is Male
-    Byunghoon is studying in dcslab
-    Jiwoo is 24 years old, and is Female
-    Jiwoo is studying in dcslab
+			<pre><code>HyunIl is 24 years old, and is Male
+Hyunil is studying in dcslab
+Byunghoon is 24 years old, and is Male
+Jiwoo is 24 years old, and is Female
+Jiwoo is studying in dcslab
 </code></pre>
 		</div>
 

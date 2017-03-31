@@ -99,8 +99,6 @@ int main(){
     }
   }
 
-  cout<<"safe"<<endl;
-
   for(i=0;i<person_count;i++){
     if(index_save.at(i)==-1)
       p_list.at(i).introduce();

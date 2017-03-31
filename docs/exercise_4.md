@@ -49,16 +49,17 @@ class Member{
 
 - Input part is marked by > in front.(Not in real implementation)
 
-        >Harry 37 Hogwarts
-        Harry is 37 years old.
-        >Viktor 41 Durmstrang
-        Viktor is 41 years old.
-        >Fleur 40 Beauxbatons
-        Fleur is 40 years old.
-        >QUIT 0 QUIT
-        Harry : Hogwarts, 37 years old.
-        Viktor : Durmstrang, 41 years old.
-        Fleur : Beauxbatons, 40 years old.
+
+		>Harry 37 Hogwarts
+		Harry is 37 years old.
+		>Viktor 41 Durmstrang
+		Viktor is 41 years old.
+		>Fleur 40 Beauxbatons
+		Fleur is 40 years old.
+		>QUIT 0 QUIT
+		Harry : Hogwarts, 37 years old.
+		Viktor : Durmstrang, 41 years old.
+		Fleur : Beauxbatons, 40 years old.
 
 
 ---
@@ -118,19 +119,19 @@ class Person{
 
 ### 2-3. Input Example
 
-        3
-        HyunIl 24 Male
-        Byunghoon 24 Male
-        Jiwoo 24 Female
-        2
-        Jiwoo dcslab
-        HyunIl dcslab
+	3
+	HyunIl 24 Male
+	Byunghoon 24 Male
+	Jiwoo 24 Female
+	2
+	Jiwoo dcslab
+	HyunIl dcslab
 
 ### 2-4. Output Example
 
-        HyunIl is 24 years old, and is Male
-        Hyunil is studying in dcslab
-        Byunghoon is 24 years old, and is Male
-        Jiwoo is 24 years old, and is Female
-        Jiwoo is studying in dcslab
+	HyunIl is 24 years old, and is Male
+	Hyunil is studying in dcslab
+	Byunghoon is 24 years old, and is Male
+	Jiwoo is 24 years old, and is Female
+	Jiwoo is studying in dcslab
 
