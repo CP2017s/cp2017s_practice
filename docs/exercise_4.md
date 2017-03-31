@@ -70,7 +70,7 @@ class Member{
 
 - Create class Student that inherits Person class as below.
 
-'''cpp
+'''c++
 class Person{
 	private:
 		string name;
