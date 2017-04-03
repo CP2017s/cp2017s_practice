@@ -6,7 +6,7 @@
 
 - Create a simple calculator that reads 2 numbers and operator.
 
-- Your program should have a class 'Unit' as follows
+- Your program should have a class `Unit` as follows
 
 ```java
 class Unit{
@@ -28,9 +28,9 @@ class Unit{
 }
 ```
 
-- Instance of class 'Unit' will get result of calculation at the moment it is created.
+- Instance of class `Unit` will get result of calculation at the moment it is created.
 
-- toString() function expresses the calculation in an equation.
+- `toString()` function expresses the calculation in an equation.
 
 
 
@@ -56,13 +56,13 @@ class Unit{
 
 ### 2-1. Description
 
-- Create an advanced calculator with class 'Unit_Advanced', which inherits class 'Unit'.
+- Create an advanced calculator with class `Unit_Advanced`, which inherits class `Unit`.
 
-- Class 'Unit_Advanced' will now read 1 token for deciding instance to compare or calculate, 2 numbers, and operator/inequality sign.
+- Class `Unit_Advanced` will now read 1 token for deciding instance to compare or calculate, 2 numbers, and operator/inequality sign.
 
-- Class 'Unit_Advanced' can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
+- Class `Unit_Advanced` can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
 
-- Also, Class 'Unit_Advanced' can now calculate a^b, a<<b, a>>b, a&b, a|b. 
+- Also, Class `Unit_Advanced` can now calculate `a^b, a<<b, a>>b, a&b, a|b`. 
 
 - toString function express the instance to an inequality expression or an equation.
 
@@ -79,8 +79,8 @@ class Unit{
 	cal 16 2 >>
 	cal 8 2 <<
 	QUIT
-	
-	
+
+
 ### 2-3 Output Example
 
 	2+4=6
@@ -107,7 +107,6 @@ class Unit{
 
 
 ### 3-2. Input  Example
-
 
 	cal 2 4 +
 	cal 3 5 *
