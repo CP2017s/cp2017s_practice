@@ -14,21 +14,30 @@ class Unit{
   private int right;
   private char type;
   private int result;
-  public Unit(int left, int right,char type){
+  Unit(int left, int right,char type){
     //TODO
   }
 
-  private void calculate(){
+  void calculate(){
     //TODO
   }
-  public String toString(){
+  String toString(){
     //TODO
   }
 }
 '''
-- Instance of class 'Unit' will get result of calculation at the moment it is created.
+
+- int left contains the first number you entered
+
+- int right contains the second number you entered
+
+- char type contains operator you entered
+
+- int result contains the result of calculation
 
 - toString() function expresses the calculation in an equation.
+
+- You may decide access range of each functions, but the variable must be private.
 
 
 
@@ -62,7 +71,19 @@ QUIT
 
 - Class 'Unit_Advanced' can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
 
-- Also, Class 'Unit_Advanced' can now calculate a^b, a<<b, a>>b, a&b, a|b. 
+- Class 'Unit_Advanced' has additional member variable : boolean isCmp, boolean cmp_result, String cmp
+
+- boolean isCmp shows whether this instance is about inequality or equation
+
+- boolean cmp_result shows whether inequality is true/false
+
+- String cmp shows which inequality sign you entered
+
+- Class 'Unit_Advaned' has additional member function : void compare()
+
+- void compare() compares 2 numbers with inequality sign you entered, and save result(boolean) in cmp_result
+
+- Also, Class 'Unit_Advanced' can now calculate a^b, a<<b(represenetd as a<b), a>b(represented as a>b), a&b, a|b. 
 
 - toString function express the instance to an inequality expression or an equation.
 
@@ -73,8 +94,10 @@ cal 2 4 +
 2+4=6
 cmp 2 4 <=
 2<=4 : true
-cmp 2 4 =
-2=4 : false
+cmp 2 5 !=
+2!=5 : true
+cmp 2 4 ==
+2==4 : false
 cmp -10 > 5
 -10>5 : false
 cal 3 6 ^
@@ -83,10 +106,10 @@ cal 1 1 &
 1&1=1
 cal 2 1 |
 2|1=3
-cal 16 2 >>
-16>>2=4
+cal 16 2 >
+16>2=4
 cal 8 2 <<
-8<<2=32
+8<2=32
 QUIT
 
 ---
@@ -117,8 +140,10 @@ cal 2 4 +
 2+4=6
 cmp 2 4 <=
 2<=4 : true
-cmp 2 4 =
-2=4 : false
+cmp 2 5 !=
+2!=5 : true
+cmp 2 4 ==
+2==4 : false
 cmp -10 > 5
 -10>5 : false
 cal 3 6 ^
@@ -139,7 +164,8 @@ list
 3-10=-7
 2+4=6
 2<=4 : true
-2=4 : false
+2!=5 : true
+2==4 : false
 -10>5 : false
 3^6=729
 1&1=1
