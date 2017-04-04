@@ -10,27 +10,38 @@
 
 ```java
 class Unit{
-	private int left;
-	private int right;
-	private char type;
-	private int result;
-	
-	public Unit(int left, int right,char type){
-		//TODO
-	}
-	
-	private void calculate(){
-		//TODO
-	}
-	public String toString(){
-		//TODO
-	}
+
+  private int left;
+  private int right;
+  private char type;
+  private int result;
+  Unit(int left, int right,char type){
+    //TODO
+  }
+
+  void calculate(){
+    //TODO
+  }
+  String toString(){
+    //TODO
+  }
 }
 ```
 
+- int left contains the first number you entered
+
+- int right contains the second number you entered
+
+- char type contains operator you entered
+
+- int result contains the result of calculation
+
 - Instance of class `Unit` will get result of calculation at the moment it is created.
 
+- You may decide access range of each functions, but the variable must be private.
+
 - `toString()` function expresses the calculation in an equation.
+
 
 
 
@@ -64,22 +75,35 @@ class Unit{
 
 - Class `Unit_Advanced` can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
 
-- Also, Class `Unit_Advanced` can now calculate `a^b, a<<b, a>>b, a&b, a|b`. 
+- Class 'Unit_Advanced' has additional member variable : boolean isCmp, boolean cmp_result, String cmp
+
+- boolean isCmp shows whether this instance is about inequality or equation
+
+- boolean cmp_result shows whether inequality is true/false
+
+- String cmp shows which inequality sign you entered
+
+- Class 'Unit_Advaned' has additional member function : void compare()
+
+- void compare() compares 2 numbers with inequality sign you entered, and save result(boolean) in cmp_result
+
+- Also, Class 'Unit_Advanced' can now calculate a^b, a<<b(represenetd as a<b), a>b(represented as a>b), a&b, a|b. 
 
 - toString function express the instance to an inequality expression or an equation.
+
 
 
 ### 2-2. Input Example
 
 	cal 2 4 +
 	cmp 2 4 <=
-	cmp 2 4 =
+	cmp 2 4 ==
 	cmp -10 > 5
 	cal 3 6 ^
 	cal 1 1 &
 	cal 2 1 |
-	cal 16 2 >>
-	cal 8 2 <<
+	cal 16 2 >
+	cal 8 2 <
 	QUIT
 
 
@@ -87,13 +111,13 @@ class Unit{
 
 	2+4=6
 	2<=4 : true
-	2=4 : false
+	2==4 : false
 	-10>5 : false
 	3^6=729
 	1&1=1
 	2|1=3
-	16>>2=4
-	8<<2=32
+	16>2=4
+	8<2=32
 
 
 ---
@@ -117,13 +141,13 @@ class Unit{
 	cal 3 10 -
 	cal 2 4 +
 	cmp 2 4 <=
-	cmp 2 4 =
+	cmp 2 4 ==
 	cmp -10 > 5
 	cal 3 6 ^
 	cal 1 1 &
 	cal 2 1 |
-	cal 16 2 >>
-	cal 8 2 <<
+	cal 16 2 >
+	cal 8 2 <
 	list
 	QUIT
 
@@ -151,10 +175,10 @@ class Unit{
 	3-10=-7
 	2+4=6
 	2<=4 : true
-	2=4 : false
+	2==4 : false
 	-10>5 : false
 	3^6=729
 	1&1=1
 	2|1=3
-	16>>2=4
-	8<<2=32
+	16>2=4
+	8<2=32
