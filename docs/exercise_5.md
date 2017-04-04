@@ -28,15 +28,14 @@ class Unit{
 }
 ```
 
-- int left contains the first number you entered
+- `int left` contains the first number you entered
 
-- int right contains the second number you entered
+- `int right` contains the second number you entered
 
-- char type contains operator you entered
+- `char type` contains operator you entered
 
-- int result contains the result of calculation
+- `int result` contains the result of calculation
 
-- Instance of class `Unit` will get result of calculation at the moment it is created.
 
 - You may decide access range of each functions, but the variable must be private.
 
@@ -75,19 +74,19 @@ class Unit{
 
 - Class `Unit_Advanced` can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
 
-- Class 'Unit_Advanced' has additional member variable : boolean isCmp, boolean cmp_result, String cmp
+- Class `Unit_Advanced` has additional member variable : `boolean isCmp, boolean cmp_result, String cmp`
 
-- boolean isCmp shows whether this instance is about inequality or equation
+- `boolean isCmp` shows whether this instance is about inequality or equation
 
-- boolean cmp_result shows whether inequality is true/false
+- `boolean cmp_result` shows whether inequality is true/false
 
-- String cmp shows which inequality sign you entered
+- `String cmp` shows which inequality sign you entered
 
-- Class 'Unit_Advaned' has additional member function : void compare()
+- Class `Unit_Advaned` has additional member function : `void compare()`
 
-- void compare() compares 2 numbers with inequality sign you entered, and save result(boolean) in cmp_result
+- `void compare()` compares 2 numbers with inequality sign you entered, and save result(boolean) in cmp_result
 
-- Also, Class 'Unit_Advanced' can now calculate a^b, a<<b(represenetd as a<b), a>b(represented as a>b), a&b, a|b. 
+- Also, Class `Unit_Advanced` can now calculate a^b, a<<b(represenetd as a<b), a>b(represented as a>b), a&b, a|b. 
 
 - toString function express the instance to an inequality expression or an equation.
 
@@ -129,7 +128,7 @@ class Unit{
 
 - Your Advanced Calculate can now memorize all inputs you entered.
 
-- When you enter "list", your program should print out all equation/inequality you have entered.
+- When you enter `list`, your program should print out all equation/inequality you have entered.
 
 
 ### 3-2. Input  Example
