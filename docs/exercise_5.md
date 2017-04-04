@@ -10,21 +10,21 @@
 
 ```java
 class Unit{
-
-  private int left;
-  private int right;
-  private char type;
-  private int result;
-  Unit(int left, int right,char type){
-    //TODO
-  }
-
-  void calculate(){
-    //TODO
-  }
-  String toString(){
-    //TODO
-  }
+	protected int left;
+	protected int right;
+	protected char type;
+	protected int result;
+	
+	public Unit(int left, int right,char type){
+		//TODO
+	}
+	
+	protected void calculate(){
+		//TODO
+	}
+	public String toString(){
+		//TODO
+	}
 }
 ```
 
@@ -40,7 +40,6 @@ class Unit{
 - You may decide access range of each functions, but the variable must be private.
 
 - `toString()` function expresses the calculation in an equation.
-
 
 
 
@@ -68,13 +67,13 @@ class Unit{
 
 ### 2-1. Description
 
-- Create an advanced calculator with class `Unit_Advanced`, which inherits class `Unit`.
+- Create an advanced calculator with class `AdvancedUnit`, which inherits class `Unit`.
 
-- Class `Unit_Advanced` will now read 1 token for deciding instance to compare or calculate, 2 numbers, and operator/inequality sign.
+- Class `AdvancedUnit` will now read 1 token for deciding instance to compare or calculate, 2 numbers, and operator/inequality sign.
 
-- Class `Unit_Advanced` can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
+- Class `AdvancedUnit` can compare two numbers based on inequality sign you entered, and save boolean value about inequality.
 
-- Class `Unit_Advanced` has additional member variable : `boolean isCmp, boolean cmp_result, String cmp`
+- Class `AdvancedUnit` has additional member variable : `boolean isCmp, boolean cmp_result, String cmp`
 
 - `boolean isCmp` shows whether this instance is about inequality or equation
 
@@ -82,14 +81,13 @@ class Unit{
 
 - `String cmp` shows which inequality sign you entered
 
-- Class `Unit_Advaned` has additional member function : `void compare()`
+- Class `AdvancedUnit` has additional member function : `void compare()`
 
 - `void compare()` compares 2 numbers with inequality sign you entered, and save result(boolean) in cmp_result
 
-- Also, Class `Unit_Advanced` can now calculate a^b, a<<b(represenetd as a<b), a>b(represented as a>b), a&b, a|b. 
+- Also, Class `AdvancedUnit` can now calculate a^b, a<<b(represenetd as a<b), a>b(represented as a>b), a&b, a|b. 
 
 - toString function express the instance to an inequality expression or an equation.
-
 
 
 ### 2-2. Input Example
@@ -101,8 +99,8 @@ class Unit{
 	cal 3 6 ^
 	cal 1 1 &
 	cal 2 1 |
-	cal 16 2 >
-	cal 8 2 <
+	cal 16 2 >>
+	cal 8 2 <<
 	QUIT
 
 
@@ -115,8 +113,8 @@ class Unit{
 	3^6=729
 	1&1=1
 	2|1=3
-	16>2=4
-	8<2=32
+	16>>2=4
+	8<<2=32
 
 
 ---
@@ -145,8 +143,8 @@ class Unit{
 	cal 3 6 ^
 	cal 1 1 &
 	cal 2 1 |
-	cal 16 2 >
-	cal 8 2 <
+	cal 16 2 >>
+	cal 8 2 <<
 	list
 	QUIT
 
@@ -179,5 +177,5 @@ class Unit{
 	3^6=729
 	1&1=1
 	2|1=3
-	16>2=4
-	8<2=32
+	16>>2=4
+	8<<2=32
