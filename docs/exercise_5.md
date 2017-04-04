@@ -18,7 +18,7 @@ class Unit{
 	public Unit(int left, int right,char type){
 		//TODO
 	}
-
+	
 	private void calculate(){
 		//TODO
 	}
@@ -34,20 +34,22 @@ class Unit{
 
 
 
-### 1-2. Input & Output Example
+### 1-2. Input Example
 
 	2 4 +
-	2+4=6
 	3 5 *
-	3*5=15
 	6 4 /
-	6/4=1
 	16 5 %
-	16%5=1
 	3 10 -
-	3-10=-7
 	QUIT
 
+### 1-3. Output Example
+
+	2+4=6
+	3*5=15
+	6/4=1
+	16%5=1
+	3-10=-7
 
 ---
 
